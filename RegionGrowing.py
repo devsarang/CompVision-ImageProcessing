@@ -117,13 +117,13 @@ plt.figure(1)
 plt.imshow(labelR, cmap = 'gray',interpolation='none')
 plt.show()
 
-#plt.figure(2)  
-#plt.imshow(img, cmap = 'gray',interpolation='none')
-#for labels in range(1,listSize+1): 
-#    index = findBoundary(labels)
-#    print index
-#    for x, y in zip(index[0], index[1]):
-#        if len(index[0]) > 100:
-#            img[x][y] = 255
-#plt.show()
+plt.figure(2)
+plt.imshow(img, cmap = 'gray',interpolation='none')
+for labels in range(1,listSize+1):
+   index = findBoundary(labels)
+   print index
+   for x, y in zip(index[0], index[1]):
+       if len(index[0]) > 100:
+           img[x][y] = 255
+plt.show()
             
